@@ -5,13 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task2.Core.Models.Dtos
+namespace Task2.Application.Dtos.StudentDtos
 {
     public class StudentCreateDto
     {
-        
         public string Name { get; set; }
-       
+        
         public string Email { get; set; }
     }
 }

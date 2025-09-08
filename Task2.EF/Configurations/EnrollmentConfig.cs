@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿    using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace Task2.EF.Configrations
                    .WithMany(c => c.Enrollments)
                    .HasForeignKey(e => e.CourseID);
             builder.HasOne(e => e.Student)
-                   .WithMany(c => c.Enrollments)
+                   .WithMany(s => s.Enrollments)
                    .HasForeignKey(e => e.StudentID);
 
         }
